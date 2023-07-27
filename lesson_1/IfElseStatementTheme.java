@@ -65,6 +65,33 @@ public class IfElseStatementTheme {
         int num4 = 123;
         int num5 = 223;
 
+        int thirdDigitNum4 = num4 % 10;
+        int secondDigitNum4 = (num4 / 10) % 10;
+        int firstDigitNum4 = (num4 / 100) % 10;
+
+        int thirdDigitNum5 = num5 % 10;
+        int secondDigitNum5 = (num5 / 10) % 10;
+        int firstDigitNum5 = (num5 / 100) % 10;
+
+        if (firstDigitNum4 == firstDigitNum5) {
+            System.out.println("Исходные числа: " + num4 + ", " + num5);
+            System.out.println("Одинаковая цифра: " + firstDigitNum4);
+            System.out.println("Номер разряда: первый");
+        }
+        if (secondDigitNum4 == secondDigitNum5) {
+            System.out.println("Исходные числа: " + num4 + ", " + num5);
+            System.out.println("Одинаковая цифра: " + secondDigitNum4);
+            System.out.println("Номер разряда: второй");
+        }
+        if (thirdDigitNum4 == thirdDigitNum5) {
+            System.out.println("Исходные числа: " + num4 + ", " + num5);
+            System.out.println("Одинаковая цифра: " + thirdDigitNum4);
+            System.out.println("Номер разряда: третий");
+        }
+        if (firstDigitNum4 != firstDigitNum5 && secondDigitNum4 != secondDigitNum5 && thirdDigitNum4 != thirdDigitNum5) {
+            System.out.println("Одинаковых цифр нет.");
+        }
+
         System.out.println("\n5.Определение символа по его коду\n");
         char ch = '\u0057';
         switch(ch) {
