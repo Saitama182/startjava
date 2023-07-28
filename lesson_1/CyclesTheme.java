@@ -160,6 +160,7 @@ public class CyclesTheme {
         } while (dollarCount2 > 0);
 
         System.out.println("\n\n7.Отображение ASCII-символов.");
+        
 
         System.out.println("\n8.Проверка, является ли число палиндромом");
         int originalNumberInput = 1234321;
@@ -227,5 +228,26 @@ public class CyclesTheme {
                     "Сумма цифр ABC = " + (digit6 + digit5 + digit4) + ", а сумма DEF = " + 
                     (digit3 + digit2 + digit1));
         }
+
+        System.out.println("\n10.Отображение таблицы умножения Пифагора");
+        System.out.println("      ТАБЛИЦА ПИФАГОРА");
+        System.out.print(" |");
+        for (int k = 2; k < 10; k++) {
+            System.out.print("  " + k + "  ");
+        }
+        System.out.println();
+        
+        for (int b = 2; b < 19; b += 2) {
+            System.out.print(b + "|");
+            for (int k = 2; k < 10; k++) {
+                int result = k * b;
+                System.out.printf("%5d ", result);
+            }
+            System.out.println();
+        }
     }
 }
+
+
+
+
