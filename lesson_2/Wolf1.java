@@ -1,10 +1,10 @@
 public class Wolf {
 
-   public boolean maleGender;
-   public String nickname;
-   public double weight;
-   public int age;
-   public String color;
+    boolean maleGender;
+    String nickname;
+    double weight;
+    int age;
+    String color;
 
    public void go() {
         System.out.println("Идет");
